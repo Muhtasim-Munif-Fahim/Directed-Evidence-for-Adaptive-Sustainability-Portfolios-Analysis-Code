@@ -26,10 +26,8 @@ data/raw/world_bank/world_bank_policy_validation_metadata.json
 - Exact workbook used: `SDR2025-data.xlsx`
 - SHA-256:
   `D506CB01758E8743DEEAF3BE03D648AC8FD9C02EC21A42119ABEDCE7AFF4D056`
-- Note: the original direct Excel URL
-  `https://dashboards.sdgindex.org/static/downloads/files/SDR2025-data.xlsx`
-  returned 404 when rechecked on July 3, 2026; the official archive and Hub
-  item above are the current public access route for the 2025 SDR data.
+- Note: use the official archive and Hub item above as the current public access
+  route for the 2025 SDR data.
 - Required workbook sheets: `Backdated SDG Index`, `SDR2025 Data`
 - Use: 2000-2024 SDG goal scores and constituent indicators.
 

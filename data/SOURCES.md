@@ -17,8 +17,19 @@ data/raw/world_bank/world_bank_policy_validation_metadata.json
 ## Sustainable Development Report 2025
 
 - Local file: `data/raw/SDR2025-data.xlsx`
-- Public download:
+- Public 2025 SDR data archive:
+  `https://sdgtransformationcenter.org/sustainable-development-report`
+- Public 2025 SDR data hub item:
+  `https://sdg-transformation-center-sdsn.hub.arcgis.com/datasets/sdsn::sustainable-development-report-2025-with-indicators/explore`
+- Public ArcGIS REST service:
+  `https://services7.arcgis.com/IyvyFk20mB7Wpc95/arcgis/rest/services/Sustainable_Development_Report_2025_(with_indicators)/FeatureServer`
+- Exact workbook used: `SDR2025-data.xlsx`
+- SHA-256:
+  `D506CB01758E8743DEEAF3BE03D648AC8FD9C02EC21A42119ABEDCE7AFF4D056`
+- Note: the original direct Excel URL
   `https://dashboards.sdgindex.org/static/downloads/files/SDR2025-data.xlsx`
+  returned 404 when rechecked on July 3, 2026; the official archive and Hub
+  item above are the current public access route for the 2025 SDR data.
 - Required workbook sheets: `Backdated SDG Index`, `SDR2025 Data`
 - Use: 2000-2024 SDG goal scores and constituent indicators.
 

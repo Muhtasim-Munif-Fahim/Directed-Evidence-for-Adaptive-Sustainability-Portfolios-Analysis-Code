@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local data and generated outputs
+data/raw/**
+data/processed/**
+outputs/**
+
+# Keep directory placeholders and source documentation
+!data/raw/
+!data/raw/.gitkeep
+!data/raw/world_bank/
+!data/raw/world_bank/.gitkeep
+!data/raw/who_ghed/
+!data/raw/who_ghed/.gitkeep
+!data/processed/
+!data/processed/.gitkeep
+!outputs/
+!outputs/.gitkeep
+!outputs/network/
+!outputs/network/.gitkeep
+!outputs/tables/
+!outputs/tables/.gitkeep
+!outputs/evidence/
+!outputs/evidence/.gitkeep
+!outputs/data_audit/
+!outputs/data_audit/.gitkeep
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

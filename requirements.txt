@@ -1,0 +1,8 @@
+linearmodels==6.1
+matplotlib>=3.8
+networkx>=3.2
+numpy<2
+openpyxl==3.1.5
+pandas==2.3.1
+scipy>=1.11
+statsmodels==0.14.5

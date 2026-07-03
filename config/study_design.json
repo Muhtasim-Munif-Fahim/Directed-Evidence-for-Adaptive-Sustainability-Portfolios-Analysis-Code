@@ -1,0 +1,82 @@
+{
+  "protocol_version": "2026-06-07.1",
+  "protocol_status": "frozen_reproducibility_protocol",
+  "analysis_identity": {
+    "title": "Beyond Sustainable Development Goal (SDG) Accelerators: Directed Evidence for Adaptive Sustainability Portfolios",
+    "scope": "Directed SDG interdependence, ranking robustness, panel local projections, and independent WDI/WHO triangulation.",
+    "primary_conclusion": "The SDG system is dense and directional, but no universal accelerator ranking is stable enough for policy use."
+  },
+  "sample": {
+    "source": "data/raw/SDR2025-data.xlsx",
+    "sheet": "Backdated SDG Index",
+    "start_year": 2000,
+    "end_year": 2024,
+    "required_years": 25,
+    "goals": [
+      "goal1",
+      "goal2",
+      "goal3",
+      "goal4",
+      "goal5",
+      "goal6",
+      "goal7",
+      "goal8",
+      "goal9",
+      "goal10",
+      "goal11",
+      "goal12",
+      "goal13",
+      "goal14",
+      "goal15",
+      "goal16",
+      "goal17"
+    ]
+  },
+  "model_families": {
+    "panel_granger_network": {
+      "estimator": "Dumitrescu-Hurlin panel Granger non-causality tests on first-differenced SDG goal scores",
+      "directed_pairs": 272,
+      "multiplicity": "Benjamini-Hochberg across directed pairs"
+    },
+    "local_projections": {
+      "estimator": "Panel local projections with Driscoll-Kraay standard errors",
+      "prespecified_pairs": 31,
+      "horizons": "0-10 years"
+    },
+    "external_validation": {
+      "sources": [
+        "World Development Indicators",
+        "WHO Global Health Expenditure Database"
+      ]
+    }
+  },
+  "claim_rules": {
+    "allowed_statuses": [
+      "supported",
+      "direction_untested",
+      "suggestive",
+      "suggestive_unstable",
+      "unsupported",
+      "not_interpretable"
+    ],
+    "supported": "Multiplicity-adjusted, directionally consistent evidence within the relevant family.",
+    "suggestive": "Raw p < 0.05 or prespecified descriptive support that does not meet the supported threshold.",
+    "unsupported": "Does not meet supported or suggestive rules.",
+    "not_interpretable": "A diagnostic, mapping, coverage, or minimum-sample gate fails.",
+    "causal_language_allowed": false
+  },
+  "vocabulary": {
+    "preferred": [
+      "directed linkage",
+      "predictive association",
+      "triangulation",
+      "adaptive sustainability portfolio",
+      "indicator-level monitoring"
+    ],
+    "prohibited_unqualified": [
+      "causal effect",
+      "universal accelerator",
+      "confirmed causal pathway"
+    ]
+  }
+}

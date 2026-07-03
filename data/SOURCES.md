@@ -49,7 +49,15 @@ data/raw/world_bank/world_bank_policy_validation_metadata.json
   `data/raw/world_bank/world_bank_policy_validation_long.csv`
 - Metadata after acquisition:
   `data/raw/world_bank/world_bank_policy_validation_metadata.json`
-- Public API: `https://api.worldbank.org/v2/`
+- DataBank source page:
+  `https://databank.worldbank.org/source/world-development-indicators`
+- Public API country endpoint:
+  `https://api.worldbank.org/v2/country?format=json&per_page=400`
+- Public API indicator endpoint pattern:
+  `https://api.worldbank.org/v2/country/all/indicator/{indicator}?format=json&date=2000:2024&per_page=20000`
+- Indicators used:
+  `SE.XPD.TOTL.GD.ZS`, `SE.PRM.ENRR`, `SE.SEC.ENRR`, `SP.DYN.LE00.IN`,
+  `SH.DYN.MORT`, and `SI.POV.DDAY`
 - Acquisition command:
 
 ```bash
